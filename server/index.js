@@ -25,7 +25,7 @@ db.connect(err => {
 
 // API Route to Fetch Data
 app.get('/users', (req, res) => {
-  db.query('SELECT * FROM mobiles', (err, results) => {
+  db.query('SELECT * FROM laptops', (err, results) => {
     if (err) {
       console.error('Error fetching data:', err);
       res.status(500).json({ error: 'Database error', details: err.message });
